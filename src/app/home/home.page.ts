@@ -11,11 +11,18 @@ export class HomePage {
 
   movies: any;
   filtro: string = '';
+  criterioFiltro: string = 'titulo';
+
+  
+  onRadioValueChanged(event: any) {
+    console.log("Criterio de búsqueda seleccionado: "+event.detail.value);
+    this.criterioFiltro = event.detail.value;
+  }
 
   constructor(private httpClient: HttpClient) {
 
     this.movies = this.httpClient.get('https://raw.githubusercontent.com/sergiomateos2daw/ProyectoPeliculas/master/peliculas.json');
-    console.log(this.movies);
+    // console.log(this.movies);
   }
     
 }

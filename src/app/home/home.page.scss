@@ -28,8 +28,13 @@
     text-decoration: none;
   }
   
-  #entrada{
+  #filtro{
     background-color: green;
+  }
+  
+  .radioButtonLast{
+    margin-top: 5px;
+    margin-bottom: 20px;
   }
 }
 
@@ -63,7 +68,7 @@
     text-decoration: none;
   }
   
-  #entrada{
+  #filtroTitulo{
     background-color: blue;
   }
 }
@@ -98,7 +103,7 @@
     text-decoration: none;
   }
   
-  #entrada{
+  #filtroTitulo{
     background-color: red;
   }
 }
